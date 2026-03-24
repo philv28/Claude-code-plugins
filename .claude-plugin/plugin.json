@@ -7,12 +7,66 @@
       "name": "explain-commit",
       "description": "Explain what a commit does in plain English, including risk signals",
       "file": "commands/explain-commit.md"
+    },
+    {
+      "name": "er-review",
+      "description": "Review a library ER diagram for missing entities, wrong cardinalities, and normalization issues",
+      "file": "commands/er-review.md"
+    },
+    {
+      "name": "schema-from-er",
+      "description": "Generate MySQL CREATE TABLE statements from a library ER diagram description",
+      "file": "commands/schema-from-er.md"
+    },
+    {
+      "name": "seed-data",
+      "description": "Generate realistic INSERT statements for a library database table",
+      "file": "commands/seed-data.md"
+    },
+    {
+      "name": "query-builder",
+      "description": "Describe what data you want in plain English and get the MySQL query",
+      "file": "commands/query-builder.md"
+    },
+    {
+      "name": "explain-query",
+      "description": "Paste a SQL query and get a plain-English explanation plus potential issues",
+      "file": "commands/explain-query.md"
+    },
+    {
+      "name": "sql-debug",
+      "description": "Paste a MySQL Workbench error and the SQL that caused it to get a diagnosis and fix",
+      "file": "commands/sql-debug.md"
     }
   ],
   "skills": [
     {
       "name": "commit-explainer",
       "file": "skills/commit-explainer/SKILL.md"
+    },
+    {
+      "name": "er-reviewer",
+      "file": "skills/er-reviewer/SKILL.md"
+    },
+    {
+      "name": "schema-generator",
+      "file": "skills/schema-generator/SKILL.md"
+    },
+    {
+      "name": "seed-data",
+      "file": "skills/seed-data/SKILL.md"
+    },
+    {
+      "name": "query-builder",
+      "file": "skills/query-builder/SKILL.md"
+    },
+    {
+      "name": "query-explainer",
+      "file": "skills/query-explainer/SKILL.md"
+    },
+    {
+      "name": "sql-debugger",
+      "file": "skills/sql-debugger/SKILL.md"
     }
   ]
 }
