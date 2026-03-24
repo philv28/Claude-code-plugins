@@ -1,0 +1,18 @@
+{
+  "name": "Phil-learning-plugin",
+  "version": "0.1.0",
+  "description": "A learning plugin built by reverse-engineering the kw-plugin architecture",
+  "commands": [
+    {
+      "name": "explain-commit",
+      "description": "Explain what a commit does in plain English, including risk signals",
+      "file": "commands/explain-commit.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "commit-explainer",
+      "file": "skills/commit-explainer/SKILL.md"
+    }
+  ]
+}

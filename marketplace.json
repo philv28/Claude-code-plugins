@@ -1,0 +1,16 @@
+{
+  "name": "Phil-learning-plugins",
+  "owner": {
+    "name": "Phil Vitale"
+  },
+  "metadata": {
+    "description": "Learning plugins built by reverse-engineering the Claude Code plugin architecture"
+  },
+  "plugins": [
+    {
+      "name": "Phil-learning-plugin",
+      "source": "./",
+      "description": "Commit explainer and other tools for understanding Claude Code plugin development"
+    }
+  ]
+}
