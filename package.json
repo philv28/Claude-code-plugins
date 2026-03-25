@@ -1,0 +1,13 @@
+{
+  "name": "phil-learning-plugin",
+  "version": "0.1.0",
+  "description": "Claude Code plugins for git, database design, and MySQL development",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}

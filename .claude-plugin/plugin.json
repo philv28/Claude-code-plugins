@@ -37,6 +37,11 @@
       "name": "sql-debug",
       "description": "Paste a MySQL Workbench error and the SQL that caused it to get a diagnosis and fix",
       "file": "commands/sql-debug.md"
+    },
+    {
+      "name": "schema-lint",
+      "description": "Lint a SQL schema file for missing ENGINE, unnamed constraints, missing indexes, and naming violations",
+      "file": "commands/schema-lint.md"
     }
   ],
   "skills": [
@@ -67,6 +72,10 @@
     {
       "name": "sql-debugger",
       "file": "skills/sql-debugger/SKILL.md"
+    },
+    {
+      "name": "schema-linter",
+      "file": "skills/schema-linter/SKILL.md"
     }
   ]
 }
