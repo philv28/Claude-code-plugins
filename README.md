@@ -67,6 +67,7 @@ npm run build
 | Command | Description |
 |---------|-------------|
 | `/schema-lint <file.sql>` | Lint any SQL schema file for structural and convention violations |
+| `/security-audit [file or description]` | Audit a schema or architecture for PII exposure, access control gaps, injection surface, and audit trail issues |
 
 ---
 
@@ -135,6 +136,27 @@ Diagnoses MySQL errors by error code, identifies the root cause (not just the er
 /sql-debug ERROR 1215 (HY000): Cannot add foreign key constraint ...
 ```
 
+### `/security-audit`
+Reviews a database schema or application architecture description across five categories: PII & sensitive data exposure, access control, data integrity enforcement, audit trail, and SQL injection surface. Returns findings by severity with specific fixes.
+
+```
+/security-audit schema.sql
+/security-audit exports/library.sql
+/security-audit Member stores First_Name, Last_Name, Email, License_ID...
+```
+
+**Categories checked:**
+
+| Category | What it looks for |
+|---|---|
+| PII & Sensitive Data | Unencrypted PII, plaintext passwords, exposed minor member data |
+| Access Control | Missing roles, no account suspension, LibraryCard status not enforced |
+| Data Integrity | Missing NOT NULL/UNIQUE/ENUM, dangerous ON DELETE CASCADE |
+| Audit Trail | Missing timestamps, no soft delete, no employee tracking on transactions |
+| SQL Injection | High-risk user-input columns, dynamic query patterns |
+
+---
+
 ### `/schema-lint`
 Runs a TypeScript-powered linter against any `.sql` schema file. Checks 8 rules across ERROR, WARNING, and INFO severity levels. Returns a fix for every issue found.
 
@@ -170,6 +192,7 @@ Runs a TypeScript-powered linter against any `.sql` schema file. Checks 8 rules 
 | `query-explainer` | `/explain-query` |
 | `sql-debugger` | `/sql-debug` |
 | `schema-linter` | `/schema-lint` |
+| `security-auditor` | `/security-audit` |
 
 ---
 
@@ -188,6 +211,7 @@ skills/                      # Skill implementations (SKILL.md files)
   query-explainer/
   sql-debugger/
   schema-linter/
+  security-auditor/
 src/
   schema-lint/
     cli.ts                   # TypeScript linter CLI (compiles to dist/)

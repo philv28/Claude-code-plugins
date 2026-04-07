@@ -42,6 +42,11 @@
       "name": "schema-lint",
       "description": "Lint a SQL schema file for missing ENGINE, unnamed constraints, missing indexes, and naming violations",
       "file": "commands/schema-lint.md"
+    },
+    {
+      "name": "security-audit",
+      "description": "Audit a database schema or application architecture for security vulnerabilities",
+      "file": "commands/security-audit.md"
     }
   ],
   "skills": [
@@ -76,6 +81,10 @@
     {
       "name": "schema-linter",
       "file": "skills/schema-linter/SKILL.md"
+    },
+    {
+      "name": "security-auditor",
+      "file": "skills/security-auditor/SKILL.md"
     }
   ]
 }
